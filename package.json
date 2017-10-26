@@ -1,0 +1,23 @@
+{
+  "name": "kontent-core-test",
+  "version": "1.0.0",
+  "description": "We are an email hosting company. Our customer calls the customer support claiming some if his emails (incoming or outgoing) were not delivered.",
+  "main": "./js/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daileytj/email-log-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daileytj/email-log-test/issues"
+  },
+  "homepage": "https://github.com/daileytj/email-log-test#readme",
+  "dependencies": {
+    "http-server": "^0.10.0",
+    "sass": "^1.0.0-beta.2"
+  }
+}

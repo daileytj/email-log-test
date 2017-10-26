@@ -1,0 +1,112 @@
+$font-family: 'Roboto', sans-serif;
+$header-font-family: 'Alfa Slab One', cursive;
+$primary-color: #00695C;
+$border-color: #000000;
+$font-color: #ffffff;
+@mixin border-radius($radius) {
+  -webkit-webkit-border-radius: $radius;
+  -moz-webkit-border-radius: $radius;
+  -ms-webkit-border-radius: $radius;
+  border-radius: $radius;
+};
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family;
+}
+
+header {
+  width: 100%;
+  padding: 30px;
+  background-color: $primary-color;
+  color: $font-color;
+  text-align: center;
+}
+
+h1 {
+  font-family: $header-font-family;
+  letter-spacing: 5px;
+  font-weight: 200;
+}
+
+h2 {
+  text-align: center;
+  padding: 30px;
+}
+
+main {
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+button {
+  width: 300px;
+  height: 40px;
+  @include border-radius(5px);
+  background-color: #1E88E5;
+  color: rgba(255,255,255, 0.8);
+  font-size: 1rem;
+  margin: 0 10px 20px;
+  padding: 10px;
+  border: none;
+}
+
+button:focus {
+  outline-color: transparent;
+  outline-style: none;
+}
+
+button:hover {
+  color: rgba(255,255,255,1);
+  box-shadow: 0.5px 3px 3px #53a4eb;
+}
+
+button:active {
+  transform: translateX(2px);
+  transform: translateY(2px);
+}
+
+table {
+  width: 100%;
+}
+
+table,
+td,
+th {
+  border: 1px solid $border-color;
+}
+
+td,
+th {
+  padding: 5px;
+}
+
+.date-cell {
+  width: 5%;
+}
+
+.id-cell,
+.incoming-outgoing-cell,
+.time-cell {
+  width: 10%;
+}
+
+.details-cell {
+  width: 65%;
+}
+
+footer {
+  text-align: center;
+  width: 100%;
+  background-color: $primary-color;
+  padding: 15px 0;
+  color: $font-color;
+  border-top: 2px solid $border-color;
+  margin-top: 20px;
+}
